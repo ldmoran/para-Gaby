@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Para Gaby</title>
+  <meta name="description" content="Una pequeña historia, escrita solo para Gaby.">
+  <meta name="theme-color" content="#0b1030">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🦋%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Great+Vibes&family=Parisienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="locked">
+
+  <div id="progress" aria-hidden="true"><span></span></div>
+  <canvas id="petals" aria-hidden="true"></canvas>
+  <div id="butterflies" aria-hidden="true"></div>
+  <div id="hearts" aria-hidden="true"></div>
+
+  <!-- ============ 1. INTRODUCCIÓN ============ -->
+  <section id="intro" class="sec sec-intro">
+    <div class="stars" data-stars="70"></div>
+    <div class="moon" aria-hidden="true"><i></i><i></i><i></i></div>
+    <div class="corner-flowers" data-corner="night"></div>
+
+    <div class="intro-inner">
+      <p class="whisper">para Gaby</p>
+      <h1 class="script-title">Hay historias que comienzan<br>mucho antes de que nos demos cuenta…</h1>
+
+      <button class="envelope" id="envelope" aria-label="Abrir el sobre">
+        <span class="env-back"></span>
+        <span class="env-letter"><em>Para Gaby</em></span>
+        <span class="env-front"></span>
+        <span class="env-flap"></span>
+        <span class="env-seal">♥</span>
+      </button>
+
+      <button class="btn" id="openBtn">Abrir una pequeña historia</button>
+      <p class="hint">Mejor con sonido ♪</p>
+    </div>
+  </section>
+
+  <!-- ============ 2. UN PEQUEÑO CUENTO ============ -->
+  <section id="cuento" class="sec sec-cuento">
+    <div class="stars" data-stars="40"></div>
+    <article class="paper frame reveal">
+      <span class="orn tl"></span><span class="orn tr"></span><span class="orn bl"></span><span class="orn br"></span>
+      <figure class="arch"><img src="assets/images/cartel.jpg" alt="Dos enamorados bajo una luna enorme" loading="lazy"></figure>
+      <p class="chapter">Capítulo único</p>
+      <h2 class="script-title dark">Un pequeño cuento</h2>
+      <div class="divider"><span>✦</span></div>
+      <p class="story dropcap reveal">Había una vez una historia que no sabía que lo era. Empezó sin ruido, con una conversación cualquiera, en una época en la que todo se sentía nuevo y nadie sospechaba que algunos nombres se quedan.</p>
+      <p class="story reveal">Con el tiempo se descubren cosas pequeñas: una manera de reír, lo que a alguien le gusta, lo que le importa, lo que le da miedo. Y un día te das cuenta de que prestabas atención sin darte cuenta, porque esa persona <em>importaba</em>.</p>
+      <p class="story reveal">Hay personas que pasan por la vida como una brisa. Y hay otras que, sin hacer nada extraordinario, se vuelven el lugar al que uno quiere volver.</p>
+      <p class="story end reveal">Este cuento todavía se está escribiendo.<br><span class="script-inline">Y tú estás en él.</span></p>
+    </article>
+    <div class="scroll-cue" aria-hidden="true">⌄</div>
+  </section>
+
+  <!-- ============ GALERÍA ============ -->
+  <section id="galeria" class="sec sec-galeria">
+    <div class="stars" data-stars="30"></div>
+    <header class="sec-head reveal">
+      <p class="chapter light">Entre sombras y luna</p>
+      <h2 class="script-title">Un cuento a nuestra manera</h2>
+    </header>
+    <div class="polaroids">
+      <figure class="polaroid reveal" style="--rot:-3deg" data-hearts>
+        <img src="assets/images/luna-silueta.jpg" alt="Siluetas de dos enamorados frente a la luna" loading="lazy">
+        <figcaption>Bajo la luna</figcaption>
+      </figure>
+      <figure class="polaroid reveal" style="--rot:2.5deg" data-hearts>
+        <img src="assets/images/pareja.jpg" alt="Víctor y Emily mirándose de reojo" loading="lazy" style="object-position:center 20%">
+        <figcaption>Un poquito tímidos, como en las mejores historias</figcaption>
+      </figure>
+      <figure class="polaroid wide reveal" style="--rot:-1.5deg" data-hearts>
+        <img src="assets/images/novia-acuarela.jpg" alt="Acuarela de la novia con cabello azul" loading="lazy">
+        <figcaption>Con carácter, con ternura, con magia</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ 3. SOBRE ELLA ============ -->
+  <section id="ella" class="sec sec-ella">
+    <div class="stars" data-stars="30"></div>
+    <header class="sec-head reveal">
+      <p class="chapter light">Sobre ella</p>
+      <h2 class="script-title">Gaby</h2>
+      <p class="lead">Toca cada tarjeta. Son pequeñas cosas que he ido notando.</p>
+    </header>
+
+    <div class="cards">
+      <button class="card reveal" data-hearts aria-label="Colores pastel">
+        <span class="card-in">
+          <span class="face front"><span class="ico" data-ico="swatch"></span><b>Sus colores</b></span>
+          <span class="face back"><span class="swatches"><i style="--c:#f9c8d6"></i><i style="--c:#fde7ee"></i><i style="--c:#e9d5f5"></i><i style="--c:#cfe3f7"></i></span><span>Los colores pastel, y el rosa por encima de todos. Hasta el mundo se ve más tierno cuando lo miras tú.</span></span>
+        </span>
+      </button>
+
+      <button class="card reveal" data-hearts aria-label="Su lado romántico">
+        <span class="card-in">
+          <span class="face front"><span class="ico" data-ico="rose"></span><b>Su lado romántico</b></span>
+          <span class="face back"><span>Eres romántica de verdad, de las que aún creen en las cartas, en los detalles y en las cosas hechas con cariño. Qué bonito es encontrar a alguien así.</span></span>
+        </span>
+      </button>
+
+      <button class="card reveal" data-hearts aria-label="Su sonrisa">
+        <span class="card-in">
+          <span class="face front"><span class="ico" data-ico="smile"></span><b>Su sonrisa</b></span>
+          <span class="face back"><span>Me encanta verte sonreír. Tu sonrisa es de esas que cambian el ánimo de un día entero. Y yo sé a quién se lo cambia.</span></span>
+        </span>
+      </button>
+
+      <div class="card kitkat reveal" id="kitkatCard">
+        <div class="card-flat">
+          <b>Su dulce favorito: KitKat</b>
+          <div class="bar" id="bar" role="button" tabindex="0" aria-label="Partir el chocolate">
+            <i></i><i></i><i></i><i></i>
+          </div>
+          <p id="barMsg">Toca el chocolate para partirlo…</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="quote reveal">Son los pequeños detalles los que hacen especial a una persona.<br>Y tú estás hecha de muchos.</p>
+  </section>
+
+  <!-- ============ 4. LAS FLORES ============ -->
+  <section id="flores" class="sec sec-flores">
+    <div class="stars" data-stars="22"></div>
+    <header class="sec-head reveal">
+      <p class="chapter light">Un pequeño jardín</p>
+      <h2 class="script-title">Las flores</h2>
+    </header>
+
+    <div class="garden" id="garden" aria-label="Jardín de rosas, claveles y astromelias"></div>
+    <p class="flower-names reveal"><span>rosas</span> · <span>claveles</span> · <span>astromelias</span></p>
+
+    <p class="quote reveal">Si pudiera regalarte flores, no elegiría solo las más bonitas.<br>Buscaría las que se parecieran un poquito a ti:<br>delicadas, con carácter, y de esas que alegran un lugar solo con estar.</p>
+  </section>
+
+  <!-- ============ 5. LA CARTA ============ -->
+  <section id="carta" class="sec sec-carta">
+    <div class="stars" data-stars="18"></div>
+    <header class="sec-head reveal">
+      <p class="chapter light">Una carta</p>
+      <h2 class="script-title">Para Gaby</h2>
+      <p class="lead">Toca el sobre para abrirla.</p>
+    </header>
+
+    <figure class="hands reveal">
+      <img src="assets/images/manos.jpg" alt="Dos manos entrelazadas en tonos azules" loading="lazy">
+      <figcaption>Acompañarte, en los días buenos y en los difíciles.</figcaption>
+    </figure>
+
+    <div class="letter-wrap reveal">
+      <button class="envelope small" id="envelope2" aria-label="Abrir la carta">
+        <span class="env-back"></span>
+        <span class="env-front"></span>
+        <span class="env-flap"></span>
+        <span class="env-seal">♥</span>
+      </button>
+
+      <article class="letter paper" id="letter" aria-hidden="true">
+        <div class="letter-in">
+          <p class="salute">Gaby:</p>
+          <p>Te escribo esto con el corazón un poquito acelerado y con la mejor intención del mundo.</p>
+          <p>Nos conocemos desde 2022. Ha pasado tiempo, y entre conversaciones, cercanías y momentos que se complicaron, hay algo que no ha cambiado: me sigue encantando conocerte. Después de todo este tiempo, todavía tengo ganas de descubrir muchísimas cosas más de ti.</p>
+          <p>Hemos hablado con sinceridad de lo que sentimos, de nuestros miedos y de lo que cada uno carga por dentro. Gracias por confiarme tus cosas. No lo tomo a la ligera y quiero cuidarlo. Yo también te conté cosas que casi no cuento, y contigo me salió natural.</p>
+          <p>No busco una persona perfecta ni una historia sin tropiezos. Sé que las relaciones no siempre son fáciles, que habrá días buenos y días en que todo pesa un poco más. Quiero estar en los dos. Quiero acompañarte, escucharte, hacerte reír, y que cuando algo se ponga difícil podamos hablarlo en lugar de alejarnos.</p>
+          <p>Me encanta verte sonreír. Es de mis cosas favoritas, y te lo digo en serio.</p>
+          <p>No quiero que seas alguien que simplemente pase por mi vida. Me gustaría que fueras con quien pueda construir una historia, despacio, a nuestro ritmo, algo bonito, estable y de los dos.</p>
+          <p>Gracias por ser tan tú, y por darme la oportunidad de conocerte.</p>
+          <p class="sign">Con todo mi cariño,<br><span>David</span> ♥</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <div class="bridge" aria-hidden="true"><div class="stars warm" data-stars="26"></div></div>
+
+  <!-- ============ 6. UN RECUERDO QUE SIGUE SONANDO ============ -->
+  <section id="recuerdo" class="sec sec-recuerdo">
+    <header class="sec-head reveal">
+      <p class="chapter warm">2022</p>
+      <h2 class="script-title warm">Un recuerdo que sigue sonando</h2>
+    </header>
+
+    <div class="record reveal" aria-hidden="true">
+      <div class="vinyl" id="vinyl"><i></i></div>
+      <div class="record-label">San Lucas<br><small>Kevin Kaarl</small></div>
+    </div>
+
+    <div class="memory reveal">
+      <p>Hay canciones que guardan una época entera. Esta es de cuando empezamos a hablar, cuando todo era nuevo y cada conversación se sentía como un descubrimiento pequeño.</p>
+      <p class="big">Qué bonito es mirar atrás y recordar que alguna vez todo era nuevo.<br>Y qué bonito sería que todavía nos queden muchísimas primeras veces por compartir.</p>
+    </div>
+    <div class="corner-flowers" data-corner="warm"></div>
+  </section>
+
+  <!-- ============ 7. UN ÚLTIMO DETALLE ============ -->
+  <section id="final" class="sec sec-final">
+    <div class="stars warm" data-stars="50"></div>
+    <header class="sec-head reveal">
+      <p class="chapter warm">Un último detalle</p>
+    </header>
+
+    <div class="bouquet reveal" id="bouquet" data-hearts aria-label="Un ramo de flores"></div>
+
+    <div class="mini-card reveal">
+      <p class="final-quote">De todas las casualidades que pudieron suceder,<br>una de mis favoritas fue coincidir contigo.</p>
+      <p class="final-sign">Con mucho cariño, David. ❤️</p>
+    </div>
+
+    <button class="btn warm" id="toTop">Volver al inicio ↑</button>
+  </section>
+
+  <!-- ============ REPRODUCTOR ============ -->
+  <div id="player" class="player" aria-label="Música" hidden>
+    <button class="p-disc" id="pDisc" aria-label="Reproducir o pausar"><span id="pIcon">♪</span></button>
+    <div class="p-info"><small>Sonando</small><b id="pTitle">—</b></div>
+    <button class="p-btn" id="pPrev" aria-label="Canción anterior">⏮</button>
+    <button class="p-btn main" id="pPlay" aria-label="Reproducir o pausar">▶</button>
+    <button class="p-btn" id="pNext" aria-label="Siguiente canción">⏭</button>
+    <div class="p-hint" id="pHint" hidden>Toca ▶ para activar la música ♪</div>
+  </div>
+  <div id="ytHolder" aria-hidden="true"><div id="ytPlayer"></div></div>
+
+  <button id="backTop" class="back-top" aria-label="Volver al inicio">↑</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
